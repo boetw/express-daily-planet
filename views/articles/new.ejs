@@ -1,0 +1,14 @@
+<% include ../partials/header.ejs%>
+
+<h1>NEW</h1>
+<form method="POST" action="/articles/new">
+  <label for="articleTitle">Title</label>
+  <input type="text" name="title">
+
+  <label for="articleBody">Body</label>
+  <input id="articleBody" type="text" name="body">
+
+  <input id="articleTitle" type="submit">
+</form>
+
+<% include ../partials/footer.ejs%>
