@@ -1,6 +1,6 @@
 <% include ../partials/header.ejs%>
-
-<h1>NEW</h1>
+<div class="col-sm-6 col-md-offset-1">
+<h2>Add a new article.</h2><br>
 <form method="POST" action="/articles/new">
   <label for="articleTitle">Title</label>
   <input type="text" name="title">
@@ -10,5 +10,6 @@
 
   <input id="articleTitle" type="submit">
 </form>
+</div>
 
 <% include ../partials/footer.ejs%>
