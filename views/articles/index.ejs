@@ -1,10 +1,10 @@
 <% include ../partials/header.ejs%>
 
 <ol>
-	<% articles.forEach(function(data){ %>
+	<% articles.forEach(function(data, index){ %>
 	<li><%= data.title %>
 		<ul>
-			<li><%= data.body.slice(0,140) %>...    <a href="articles/<%= data.id %>">Read more</a></li>
+			<li><%= data.body.slice(0,140) %>...    <a href="articles/<%= index %>">Read more</a></li>
 		</ul>
 	</li>
 	<% }); %>
