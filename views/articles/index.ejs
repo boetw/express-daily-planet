@@ -2,7 +2,11 @@
 
 <ol>
 	<% articles.forEach(function(data){ %>
-	<li><%= data.title %><ul><li><%= data.body %></li></ul></li>
+	<li><%= data.title %>
+		<ul>
+			<li><%= data.body.slice(0,140) %>...    <a href="articles/<%= data.id %>">Read more</a></li>
+		</ul>
+	</li>
 	<% }); %>
 </ol>
 <% include ../partials/footer.ejs%>
