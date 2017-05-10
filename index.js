@@ -13,9 +13,9 @@ app.use(express.static('static'))
 
 //routes
 ///SITE
-app.get("/", function(req, res) {
-	res.render('site/index');
-});
+// app.get("/", function(req, res) {
+// 	res.render('site/index');
+// });
 app.get("/about", function(req, res) {
 	res.render('site/about');
 });
@@ -23,7 +23,7 @@ app.get("/contact", function(req, res) {
 	res.render('site/contact');
 });
 ///ARTICLES
-app.get("/articles", function(req, res) {
+app.get("/", function(req, res) {
 	var fileContents = fs.readFileSync('./data.json');
 	var data = JSON.parse(fileContents);
 	res.render("articles", {

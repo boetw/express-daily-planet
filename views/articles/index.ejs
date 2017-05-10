@@ -1,8 +1,12 @@
 <% include ../partials/header.ejs%>
+<div class="container-fluid title header">
+<h1>Welcome to the Daily Planet</h1>
+<h3>Recent articles:</h3>
+</div>
 
-<ol>
+<ol class="articleList text">
 	<% articles.forEach(function(data, index){ %>
-	<li><%= data.title %>
+	<li><p><%= data.title %></p>
 		<ul>
 			<li><%= data.body.slice(0,140) %>...    <a href="articles/<%= index %>">Read more</a></li>
 		</ul>

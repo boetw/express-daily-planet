@@ -1,5 +1,8 @@
 <% include ../partials/header.ejs%>
-<h1>Article</h1>
-	<p><%= articles.title %></p><p><%= articles.body %></p>
+<div class="wrapper">
+	<h1 class="header"><%= articles.title %></h1>
+	<p class="text"><%= articles.body %></p>
+	<a href="../">Back to articles</a>
+<div>
 
 <% include ../partials/footer.ejs%>
